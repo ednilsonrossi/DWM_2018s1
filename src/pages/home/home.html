@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Imagens Reddit.com
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides [direction]="horizontal">
+    <ion-slide *ngFor="let item of lista">
+      <p>{{item.data.title}}</p>
+      <img src={{item.data.thumbnail}} />
+      <a href={{item.data.url}}><p>Imagem Original</p></a>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
