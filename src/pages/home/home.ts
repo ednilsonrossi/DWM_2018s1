@@ -15,7 +15,7 @@ export class HomePage {
         //console.log("txt: " + dados.data.children);
         this.lista = data.data.children;
       },erro=>{
-
+        
       }
     );
     

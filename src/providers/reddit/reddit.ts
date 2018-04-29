@@ -15,7 +15,7 @@ export class RedditProvider {
   }
 
   public getJson(){
-    return this.http.get("https://www.reddit.com/r/pics/.json?limit=1000");
+    return this.http.get("https://www.reddit.com/r/pics/.json");
   }
 
 
